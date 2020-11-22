@@ -963,6 +963,41 @@ textarea {
   transition: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 250ms;
 }
+.checkbox-input {
+  position: absolute;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.checkbox-label {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--tittle-text-color);
+}
+.checkbox-icon {
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+  margin-right: 9px;
+  border: 1px solid black;
+  border-radius: 4px;
+}
+.license-accent {
+  color: var(--accent-color);
+  text-decoration: underline;
+}
+
+.checkbox-input:checked + .checkbox-icon {
+  background-color: var(--accent-color);
+  background-image: url(../images/iconcheck.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-origin: border-box;
+  border-color: var(--accent-color);
+}
+
 .submit {
   margin-top: 30px;
   text-align: center;
